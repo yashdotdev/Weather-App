@@ -8,7 +8,7 @@ A simple weather web app built using **HTML**, **CSS**, and **JavaScript**. It s
 
 ## 🔗 Live Demo
 
-[View the app here](https://your-vercel-domain.vercel.app)
+[View the app here](my-js-weather-site.vercel.app/)
 
 ## 🚀 Features
 
