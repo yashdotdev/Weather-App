@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="Wheading">Weather App</h1>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name..."
+          aria-label="City Name"
+        />
+        <button id="search-button" aria-label="Get Weather">
+          <i class="bx bx-search"></i>
+        </button>
+      </div>
+
+      <div class="weather-info">
+        <img src="" alt="" id="imgWeather" />
+        <h1 id="temperature"></h1>
+        <h1 id="city-name"></h1>
+
+        <div class="info-row">
+          <div class="description-icon">
+            <p id="weather-description"></p>
+          </div>
+
+          <p id="humidity"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

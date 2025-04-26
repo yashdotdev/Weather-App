@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0e0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 390px;
+  background: linear-gradient(135deg, #3dd7ac, #9a67c1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in;
+}
+
+.Wheading {
+  margin-bottom: 1.9rem;
+  margin-top: 0;
+  color: #f7f5f5;
+}
+
+.search-box {
+  margin-bottom: 12px;
+}
+
+#city-input {
+  padding: 10px 15px;
+  width: 220px;
+  font-size: 1rem;
+  border: none;
+  background: #fafafa;
+  border-radius: 30px;
+  margin-right: 10px;
+  color: #0a0a0a;
+  outline: 0;
+}
+
+#city-input::placeholder {
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 10px 15px;
+  height: 48px;
+  width: 48px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fafafa;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#search-button i {
+  color: #0a0a0a;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#search-button:hover {
+  background-color: #fafafaa5;
+}
+
+.weather-info {
+  color: #fff;
+  display: none;
+  transition: all 0.2s ease-in;
+}
+
+.weather-info img {
+  height: 150px;
+  width: 170px;
+}
+
+.weather-info #temperature {
+  color: #f7f5f5;
+  font-size: 3.7rem;
+  font-weight: 500;
+}
+
+.weather-info #city-name {
+  color: #f7f5f5;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.info-row p {
+  margin: 0;
+  font-size: 18px;
+}
+
+#weather-description {
+  margin-right: 8px;
+}
+
+@media (max-width: 440px) {
+  .container {
+    max-width: 350px;
+    padding: 10px;
+    max-height: 600px;
+  }
+
+  .weather-info img {
+    height: 120px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 320px;
+    padding: 10px;
+  }
+
+  .weather-info img {
+    height: 120px;
+    width: 140px;
+  }
+}
