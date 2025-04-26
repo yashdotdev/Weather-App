@@ -1,5 +1,3 @@
-// Add event listener to the button to trigger the weather fetch
-
 let input = document.getElementById("city-input");
 
 input.addEventListener("keydown", function (e) {
@@ -24,7 +22,7 @@ document.getElementById("search-button").addEventListener("click", function () {
 
 // Function to fetch weather data from the API
 async function getWeather(city) {
-  const apiKey = "f00c38e0279b7bc85480c3fe775d518c"; // Replace with your OpenWeatherMap API key
+  const apiKey = "f00c38e0279b7bc85480c3fe775d518c";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   try {
