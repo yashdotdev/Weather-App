@@ -34,7 +34,7 @@ async function getWeather(city) {
     }
 
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     displayWeather(data); // Display the weather data if successful
   } catch (error) {
     displayError(error.message); // Display error msg
@@ -58,7 +58,7 @@ function displayWeather(data) {
     data.main.temp
   )}°C`;
 
-  console.log(data.main.temp);
+  // console.log(data.main.temp);
 
   document.getElementById(
     "humidity"
