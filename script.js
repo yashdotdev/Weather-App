@@ -52,7 +52,7 @@ function displayWeather(data) {
   const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
   const icon = (document.getElementById("imgWeather").src = iconUrl);
 
-  console.log(icon);
+  // console.log(icon);
 
   document.getElementById("temperature").textContent = `${Math.round(
     data.main.temp
